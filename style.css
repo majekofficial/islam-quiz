@@ -1,5 +1,25 @@
 * {
   margin: 0;
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Customize the background color */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    color: #333;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0073e6; /* Customize link color */
+}
+
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
