@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Islamic Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="start-container" class="start-container">
+    <h1>Welcome to Islamic Quiz</h1>
+    <button id="start-btn" class="start-btn">Start Quiz</button>
+  </div>
+
+  <div class="quiz-container hide">
+    <h2 id="question">Loading...</h2>
+    <div id="answer-buttons" class="btn-grid">
+      <button class="btn option-btn" id="a"></button>
+      <button class="btn option-btn" id="b"></button>
+      <button class="btn option-btn" id="c"></button>
+      <button class="btn option-btn" id="d"></button>
+    </div>
+    <button id="next-btn" class="next-btn">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function() {
+        console.log('Service Worker Registered');
+      });
+  }
+</script> 
+</body>
+</html>
