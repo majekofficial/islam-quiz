@@ -113,6 +113,9 @@ h2 {
 #next-btn:hover, .next-btn:hover {
   background-color: #563bd9;
 }
+footer a:hover {
+    color: #ff6600; /* Change color on hover */
+}
 
 .result p {
   font-size: 18px;
